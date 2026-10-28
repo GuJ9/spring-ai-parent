@@ -1,0 +1,36 @@
+
+server:
+  port: 8083
+
+spring:
+  application:
+    name: chat-memory
+
+  ai:
+    dashscope:
+      api-key: 'sk-ws-H.PLEHIY1VGPVFalX4qG0-8bUEnz0AiBNTBQxYhyb1ky2Rc5nAMTcSrLSkR0eL_u0wobQwM6dOg'
+
+    chat:
+      memory:
+        repository:
+          jdbc:
+            initialize-schema: always
+            platform: mysql
+            schema: classpath:/sql/schema-mysql.sql
+
+    memory:
+      redis:
+        host: 127.0.0.1
+        port: 16379
+
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 16379
+      database: 0
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username:
+    password:
+    url: "jdbc:mysql://locaue&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true"

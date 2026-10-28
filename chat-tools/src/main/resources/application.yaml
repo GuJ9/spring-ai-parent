@@ -1,0 +1,12 @@
+
+server:
+  port: 8084
+
+spring:
+  application:
+    name: chat-memory
+
+  ai:
+    dashscope:
+      api-key: 'sk-ws-H.PLEHI1VGPVFalX4qGnz0AiBNTBQxYhyb1ky2Rc5nAMTcSrLSkR0eL_u0wobQwM6dOg'
+

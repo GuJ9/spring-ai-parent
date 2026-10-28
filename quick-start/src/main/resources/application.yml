@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: quick-start
+
+  ai:
+    deepseek:
+      api-key: 'sk-38c5724c35fe8a'
+
+    dashscope:
+      api-key: 'sk-ws-H.FalX4qG0-8bUEnz0AiBNTBQxYhyb1ky2Rc5nAMTcSrLSkR0eL_u0wobQwM6dOg'
+    ollama:
+      base-url: 'http://localhost:11434/'
+      model: 'qwen3.5:4b'
+
+server:
+  port: 8080

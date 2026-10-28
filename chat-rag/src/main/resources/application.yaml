@@ -1,0 +1,21 @@
+
+server:
+  port: 8085
+
+spring:
+  application:
+    name: chat-rag
+
+  ai:
+    dashscope:
+      api-key: 'sk-ws-H.PLEHIEM.EfR3.MEQCIHFalX4qG0-8bUEnz0AiBNTBQxYhyb1ky2Rc5nAMTcSrLSkR0eL_u0wobQwM6dOg'
+    zhipuai:
+      api-key: 'f9d014b1465fAb7m6zXw0qi8jx'
+    vectorstore:
+      elasticsearch:
+        initialize-schema: true
+        index-name: custom-index
+        dimensions: 1024
+        similarity: cosine
+  elasticsearch:
+    uris: 'https://my-elasticsp.elastic.cloud:443'

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: chat-client
+  ai:
+    deepseek:
+      api-key: 'sk-38c5724c313535fe8a'
+    dashscope:
+      api-key: 'sk-ws-H.PLEH1VGPVFalX4qG0-8bUEnz0AiBNTBQxYhyb1ky2Rc5nAMTcSrLSkR0eL_u0wobQwM6dOg'
+    ollama:
+      base-url: 'http://localhost:11434/'
+server:
+  port: 8081
